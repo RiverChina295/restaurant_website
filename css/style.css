@@ -1,0 +1,187 @@
+{
+    /* Good practice to begin the css with this */
+    margin: 0;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+      background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+      background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
+  }
+}
+
+/* Desktop Styles */
+/* Although having all 3 properties here isn't needed, will be left for a reference point on other projects for now */
+@media only screen and (min-width: 961px) {
+  body {
+      background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
+  }
+}
+.main-picture {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.navbar {
+
+        background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
+}
+
+.navbar-brand,
+.navbar-text {
+  font-family: 'Bangers', arial;
+  text-shadow: 4px 4px 4px #aaa;
+
+}
+.nav-link {
+  font-family: 'Hammersmith One', 'sans-serif';
+  color: black;
+  text-shadow: 4px 4px 4px #aaa;
+
+}
+
+
+/* carousel elements */
+.d-block {
+  height: 400px;
+  width: 100px;
+  overflow: visible;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  max-height: auto;
+  max-width: 800px;
+  min-width: auto;
+  min-height: auto;
+  margin-top: 10px;
+}
+
+.restoname
+.number {
+  font-size: 50px;
+}
+
+
+/* resizing for different screens, keeps the dimensions still intact */
+@media only screen and (min-width: 10px) and (max-width: 901px) {
+  .d-block {
+    height: 400px;
+    width: 100px;
+    overflow: visible;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    max-height: auto;
+    max-width: auto;
+    min-width: auto;
+    min-height: auto;
+    margin-top: 10px;
+  }
+}
+.carousel-desc {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: -50px;
+    color: #fff;
+    font-family: 'Bangers', 'sans-serif';
+    font-size: 30px;
+    text-shadow: 4px 4px 4px #000000;
+}
+.body {
+    font-family: 'Proza Libre', sans-serif;
+}
+
+.desc {
+  text-align: left;
+}
+
+.bold {
+  font-weight:bold;
+  text-align: left;
+}
+
+.header .logo {
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+.hours-title {
+    font-family: 'Proza Libre', sans-serif;
+    background: transparent;
+    border-color: #129CF3;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+
+}
+
+.hours {
+  text-align: center;
+}
+
+.menuItem h2{
+    font-size: 25px;
+    text-align: center;
+}
+.menu-header {
+  font-family: 'Hammersmith One', 'sans-serif';
+  color: black;
+  text-shadow: 4px 4px 4px #ffff66;
+  padding-top: 20px;
+
+}
+
+.picture {
+  height: auto;
+  width: auto;
+  max-width: 500px;
+  max-height: 500px;
+  padding-left: 20px;
+}
+
+.top-picture{
+  padding-top: 100px;
+  height: auto;
+  width: auto;
+  max-width: 2500px;
+  max-height: 950px;
+}
+
+.top-nav{
+  padding-bottom: 1000px;
+}
+.menu-timeframe {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.menuItem {
+  border: 1px dashed #ff590D;
+	box-shadow: 0 0 0 3px #ff590D, 0 0 0 5px #FFCF0D, 0 0 0 10px #E8710C, 0 0 2px 10px #FFCF0D;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(to left, #ff9900 2%, #e8710c 78%);
+
+
+}
+
+@media(max-width:500px) {
+  .navbar .navbar-brand {float:none;display: inline-block;}
+  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+  .navbar .navbar-nav {float:none !important;}
+  .nav-item{width:100%;text-align:left;}
+  .navbar-toggler {display: block !important;}
+  .navbar-toggleable-sm.collapse {display:none !important}
+  .navbar-toggleable-sm.collapse.in {display:block !important}
+}

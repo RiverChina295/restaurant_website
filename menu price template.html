@@ -1,0 +1,58 @@
+<!-- Template to simplify using menu pricing and items -->
+
+<!-- <div class="container">
+<h2>Small Table</h2>
+<p>The .table-sm class makes the table smaller by cutting cell padding in half:</p>
+<table class="table table-bordered table-sm">
+<thead>
+<tr>
+  <th>  </th>
+  <th>Small</th>
+  <th>Large</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>John</td>
+  <td>Doe</td>
+  <td>john@example.com</td>
+</tr>
+<tr>
+  <td>Mary</td>
+  <td>Moe</td>
+  <td>mary@example.com</td>
+</tr>
+<tr>
+  <td>July</td>
+  <td>Dooley</td>
+  <td>july@example.com</td>
+</tr>
+</tbody>
+</table>
+</div> -->
+
+
+<!-- Google Map Test -->
+          <h3>Map to find us easier on your way, </h3>
+              <!--The div element for the map -->
+              <div id="map"></div>
+              <script>
+          // Initialize and add the map
+          function initMap() {
+            // The location of Uluru
+            var chinaRiver = {lat: 42.550936, lng: -70.882875};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 17, center: chinaRiver});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: chinaRiver, map: map});
+          }
+              </script>
+              <!--Load the API from the specified URL
+              * The async attribute allows the browser to render the page while the API loads
+              * The key parameter will contain your own API key (which is not needed for this tutorial)
+              * The callback parameter executes the initMap() function
+              -->
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2YCR71A73mSyYg7DKBTOAMD5lHxwppPg&callback=initMap">
+              </script>
