@@ -185,3 +185,7 @@
   .navbar-toggleable-sm.collapse {display:none !important}
   .navbar-toggleable-sm.collapse.in {display:block !important}
 }
+
+.map {
+  margin: auto;
+}
