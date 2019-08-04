@@ -31,7 +31,6 @@
 }
 
 .navbar {
-
         background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
 }
 
@@ -42,9 +41,11 @@
 
 }
 .nav-link {
-  font-family: 'Hammersmith One', 'sans-serif';
+
   color: black;
-  text-shadow: 4px 4px 4px #aaa;
+  font-family: 'Bangers', 'sans-serif';
+  font-size: 25px;
+  text-shadow: 4px 4px 4px #fff;
 
 }
 
@@ -135,6 +136,7 @@
     text-align: center;
 }
 .menu-header {
+
   font-family: 'Hammersmith One', 'sans-serif';
   color: black;
   text-shadow: 4px 4px 4px #ffff66;
@@ -184,6 +186,22 @@
   .navbar-toggler {display: block !important;}
   .navbar-toggleable-sm.collapse {display:none !important}
   .navbar-toggleable-sm.collapse.in {display:block !important}
+}
+
+/* .navbar-toggler {
+    border: 2px solid #FFCF0D;
+    font-family: 'Bangers', 'sans-serif';
+    text-shadow: 4px 4px 4px #000000;
+    font-size: 25px;
+    color:#FFCF0D;
+    background: linear-gradient(to left, #ff9900 2%, #e8710c 78%);
+} */
+
+.navbar-toggler {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
 
 .map {
