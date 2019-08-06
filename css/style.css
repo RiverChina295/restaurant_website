@@ -25,6 +25,15 @@
       background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
   }
 }
+
+.desc {
+  text-align: left;
+}
+
+.bold {
+  font-weight:bold;
+  text-align: left;
+}
 .main-picture {
   text-align: center;
   margin-top: 150px;
@@ -103,15 +112,6 @@
     font-family: 'Proza Libre', sans-serif;
 }
 
-.desc {
-  text-align: left;
-}
-
-.bold {
-  font-weight:bold;
-  text-align: left;
-}
-
 .header .logo {
     padding-bottom: 10px;
     padding-top: 50px;
@@ -188,21 +188,21 @@
   .navbar-toggleable-sm.collapse.in {display:block !important}
 }
 
-/* .navbar-toggler {
+ .navbar-toggler {
     border: 2px solid #FFCF0D;
     font-family: 'Bangers', 'sans-serif';
     text-shadow: 4px 4px 4px #000000;
     font-size: 25px;
     color:#FFCF0D;
-    background: linear-gradient(to left, #ff9900 2%, #e8710c 78%);
-} */
-
-.navbar-toggler {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
+    width: 250px;
+    background: linear-gradient(to left, #ff9900 2%, #e8710c 45%);
 }
+
+ .navbar-toggler-icon {
+   position: relative;
+   left: -29px;
+   font-size: 20px;
+ }
 
 .map {
   margin: auto;
