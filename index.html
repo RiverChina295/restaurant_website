@@ -23,9 +23,22 @@ function scrlsts() {
  document.title = scrl;
  setTimeout("scrlsts()", 300);
  }
+
+ // This snippet closes collapsible navbar after clicked outside
+ $(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+});
+
 //  End -->
 
 </script>
+
   <title class="scroll-left">
     China River Beverly, MA (978) 921-1184
   </title>
@@ -39,11 +52,11 @@ function scrlsts() {
 
 
 
-<nav class="navbar navbar-expand-md bg-warning navbar-warning fixed-top">
+<nav class="navbar navbar-expand-md bg-warning navbar-warning fixed-top" id="navbar">
   <a class="navbar-brand"><h1 class="restoname" style="text-align:left">China River</h1></a>
   <span class="navbar-text"><h3 class="number" style="text-align:center">Call today! <br>(978)921-1184</h3></span>
 
-  <button class="navbar-toggler type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button class="navbar-toggler type="button btn-block" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon Navigation">Navigation<span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -83,7 +96,7 @@ function scrlsts() {
 
 </header>
 
-<!-- main section of website, everything goes here -->
+ <!-- main section of website, everything goes here  -->
 
 
             </div>
@@ -191,14 +204,11 @@ function scrlsts() {
   <section class="menu-timeframe">
 
     <div class="container">
-
       <div class="row">
-
         <div class="col-md-6">
-
-          <div class="hours-title">
-            <h2 class="menu-title" class="hours" style="text-align:center">Hours of Operation</h2>
-            <table class="table table-borderless table-sm">
+          <div class="hours">
+            <h2 class="menu-title" style="text-align:center">Hours of Operation</h2>
+            <table class="table table-borderless table-sm hours">
               <tbody style="text-align:center">
                 <tr><td>Sunday</td><td>12pm-10pm</td></tr>
                 <tr><td>Monday</td><td>11am-10pm</td></tr>
@@ -227,7 +237,12 @@ function scrlsts() {
     </div>
 
   </section>
-  <section class="appetizers" id="appetizers">
+  <hr class="appetizers" id="appetizers"/>
+  <hr />
+    <hr />
+      <hr />
+
+  <section class="apps" id="apps">
     <div class="container">
       <div class="row">
 
@@ -265,20 +280,23 @@ function scrlsts() {
                 <br />
                 <table>
                   <tbody>
-                    <tr><td style="text-align:left">duck sauce</td><td>.35</td><td>1.00</td><td>2.00</td>
+                    <tr><td style="text-align:left">duck sauce</td><td>(sm).35</td><td>(lg)1.00</td><td>(xl)2.00</td><td></td>
                       <tr><td style="text-align:left"> (tan colored sweet and sour)</td></tr>
-                      <tr><td style="text-align:left">ginger sauce</td><td>.25</td></tr>
-                      <tr><td style="text-align:left">garlic chili paste</td><td>.25</td></tr>
-                      <tr><td style="text-align:left">egg foo yong gravy</td><td>1.00</td></tr>
-                      <tr><td style="text-align:left">plum(hoisin) sauce </td><td>.25</td></tr>
-                      <tr><td style="text-align:left">red sweet and sour sauce</td><td>1.50</td></tr>
-                      <tr><td style="text-align:left">oyster sauce</td><td>1.25</td></tr>
+                      <tr><td style="text-align:left">ginger sauce</td><td></td><td>.25</td></tr>
+                      <tr><td style="text-align:left">garlic chili paste</td><td></td><td>.25</td></tr>
+                      <tr><td style="text-align:left">egg foo yong gravy</td><td></td><td>1.00</td></tr>
+                      <tr><td style="text-align:left">plum(hoisin) sauce </td><td></td><td>.25</td></tr>
+                      <tr><td style="text-align:left">red sweet and sour sauce</td><td></td><td>1.50</td></tr>
+                      <tr><td style="text-align:left">oyster sauce</td><td></td><td>1.25</td></tr>
                     </table>
 
                   </div>
                 </div>
 
-
+                <hr class="appetizers" id="appetizers"/>
+                <hr />
+                  <hr />
+                    <hr />
                 <div class="col-md-4">
                   <h2 class="menu-header">Appetizers </h2>
                   <div class="menuItem">
@@ -340,6 +358,11 @@ function scrlsts() {
               </div>
             </div>
           </section>
+
+          <hr class="rice-and-noodles" id="rice"/>
+          <hr />
+            <hr />
+              <hr />
   <section class="rice-and-noodles" id="rice">
             <div class="container">
               <div class="row">
@@ -457,6 +480,12 @@ function scrlsts() {
               </div>
             </div>
           </section>
+
+
+          <hr class="CS-CM-EFY" id="efy"/>
+          <hr />
+            <hr />
+              <hr />
   <section class="CS-CM-EFY" id="efy">
             <div class="container">
               <div class="row">
@@ -539,6 +568,11 @@ function scrlsts() {
             </div>
           </section>
           <!-- nopehhyui code written by baobao  -->
+
+          <hr class="bf-ch-sh" id="meats"/>
+          <hr />
+            <hr />
+              <hr />
   <section class="bf-ch-sh" id="meats">
             <div class="container">
               <div class="row">
@@ -628,6 +662,11 @@ function scrlsts() {
                 </div>
               </div>
           </section>
+
+          <hr class="mandarin-dish-suggestions" id="mandarin"/>
+          <hr />
+            <hr />
+              <hr />
   <section class="mandarin-dish-suggestions" id="mandarin">
               <div class="container">
                 <div class="row">
@@ -725,6 +764,11 @@ function scrlsts() {
                                           </div>
                                         </div>
   </section>
+
+  <hr class="comboplates" id="comboplates"/>
+  <hr />
+    <hr />
+      <hr />
   <section class="comboplates" id="comboplates">
                                         <div class="container">
                                           <div class="row">
@@ -792,7 +836,6 @@ function scrlsts() {
                                             </div>
                                           </div>
                                         </div>
-
                                       </section>
 
 
@@ -833,5 +876,5 @@ function scrlsts() {
 
  </form>
 </div>
-    <p>Disclaimer: The website isn't perfect on all screens and will be continually reviewed in order to make the best experience possible.  If you have any suggestions or comments regarding the design, use the form and let me know, thank you for stopping by!<br><b>(No soliciting, please)</b></p>
+    <p>Disclaimer: The website isn't perfect on all screens and will be continually reviewed in order to make the best experience possible.  If you have any suggestions or comments regarding the design, email me <a href="mailto:gveltaine@gmail.com"><b>at this email</b></a> with the subject "CRWebsite", thank you for stopping by!<br><b>(No soliciting, please)</b></p>
 </html>
