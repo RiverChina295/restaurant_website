@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
