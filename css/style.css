@@ -175,9 +175,30 @@ html {
   max-height: 950px;
 }
 
-/* .top-nav{
-  padding-bottom: 500px;
-} */
+.container {
+  padding-top: 100px;
+}
+
+/* To make it that mobile screens space the headings properly */
+/* Ideally anything smaller than a laptop/desktop */
+@media only screen and (max-width: 960px) {
+  .container {
+    padding-top: 150px;
+
+  }
+}
+@media (max-width: 1175px) {
+  .navbar .navbar-brand {float:none;display: inline-block;}
+  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+  .navbar .navbar-nav {float:none !important;}
+  .nav-item{width:100%;text-align:left;}
+  .navbar-toggler {display: block !important;}
+  .navbar-toggleable-sm.collapse {display:none !important}
+  .navbar-toggleable-sm.collapse.in {display:block !important}
+  .navbar navbar-toggler type= collapsed {display:none !important}
+}
+
+
 
 hr {
   visibility: hidden;
@@ -199,15 +220,6 @@ hr {
 
 }
 
-@media (min-width 0px) and (max-width:1220px) {
-  .navbar .navbar-brand {float:none;display: inline-block;}
-  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
-  .navbar .navbar-nav {float:none !important;}
-  .nav-item{width:100%;text-align:left;}
-  .navbar-toggler {display: block !important;}
-  .navbar-toggleable-sm.collapse {display:none !important}
-  .navbar-toggleable-sm.collapse.in {display:block !important}
-}
 
  .navbar-toggler {
     border: 2px solid #FFCF0D;
