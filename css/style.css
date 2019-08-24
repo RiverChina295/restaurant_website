@@ -9,10 +9,14 @@ html {
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 640px) {
   body {
       background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
   }
+  #navbar-desktop {
+    display: none;
+  }
+
 }
 
 /* Tablet Styles */
@@ -41,6 +45,8 @@ html {
 .main-picture {
   text-align: center;
   margin-top: 150px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .hours {
@@ -58,6 +64,18 @@ html {
 .h2 menu-header {
   margin-bottom: -20px;
 }
+
+
+/* horizontal lines, but invisible for spacing on certain niches of website */
+
+hr {
+  visibility: hidden;
+  clear: both;
+}
+
+/* navbar for mobile */
+
+
 
 .navbar-brand,
 .navbar-text {
@@ -84,10 +102,10 @@ html {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10%;
-  max-height: auto;
-  max-width: 800px;
-  min-width: auto;
-  min-height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  /* min-width: auto;
+  min-height: auto; */
   margin-top: 10px;
 }
 
@@ -167,12 +185,20 @@ html {
   padding-left: 20px;
 }
 
-.top-picture{
+/* .top-picture{
   padding-top: 100px;
   height: auto;
   width: auto;
   max-width: 2500px;
   max-height: 950px;
+} */
+
+.top-picture{
+  padding-top: 100px;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .container {
@@ -195,16 +221,29 @@ html {
   .navbar-toggler {display: block !important;}
   .navbar-toggleable-sm.collapse {display:none !important}
   .navbar-toggleable-sm.collapse.in {display:block !important}
-  .navbar navbar-toggler type= collapsed {display:none !important}
 }
 
-
-
-hr {
-  visibility: hidden;
-  clear: both;
+@media (max-width:1125px) {
+ .navbar-toggler {
+    border: 2px solid #FFCF0D;
+    font-family: 'Bangers', 'sans-serif';
+    text-shadow: 4px 4px 4px #000000;
+    font-size: 25px;
+    color:#FFCF0D;
+    width: 250px;
+    background: linear-gradient(to left, #ff9900 2%, #e8710c 45%);
+}
 }
 
+ .navbar-toggler-icon {
+   position: relative;
+   left: -29px;
+   font-size: 20px;
+ }
+
+
+
+/* Operation time-block */
 .menu-timeframe {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -221,22 +260,7 @@ hr {
 }
 
 
- .navbar-toggler {
-    border: 2px solid #FFCF0D;
-    font-family: 'Bangers', 'sans-serif';
-    text-shadow: 4px 4px 4px #000000;
-    font-size: 25px;
-    color:#FFCF0D;
-    width: 250px;
-    background: linear-gradient(to left, #ff9900 2%, #e8710c 45%);
-}
-
- .navbar-toggler-icon {
-   position: relative;
-   left: -29px;
-   font-size: 20px;
- }
-
+/* Map dimensions at bottom of website */
 .map {
   margin: auto;
 }
