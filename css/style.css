@@ -36,7 +36,7 @@ html {
 /* as of this version the side nav bar is adjustable to all screen types. */
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   body {
       background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
   }
