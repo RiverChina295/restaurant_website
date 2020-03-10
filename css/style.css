@@ -1,22 +1,51 @@
-{body
-    /* Good practice to begin the css with this */
-    margin: 0;
-}
+/* 
+Please use the find feature to find the section of the CSS you want by referencing the content section here!
+  /* ----------------------------------------------------------------------- 
+  Contents 
+   1. Main
+   2. Screen Adjustments
+   3. Text / Text Boxes
+   4. Pictures
+   5. Map
+   6. Navigation Bar
+   6b. Mobile Navigation Bar
+   7. Comments
+   8. Etc
+   ----------------------------------------------------------------------- */
+
+
+/* 1. Main */
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+  background-color: linear-gradient(to left, #ff9900 2%, #e8710c 85%);
+
 }
 
 
+
+.container {
+  padding-top: 10px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* 2. Screen Adjustments 
+
+
+/* as of this version the side nav bar is adjustable to all screen types. */
+
 /* Mobile Styles */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 400px) {
   body {
       background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
   }
-  #navbar-desktop {
-    display: none;
+  .sideNavBar {
+    visibility: hidden;
   }
-
+  .navbar-nav {
+    visibility: none;
+  }
 }
 
 /* Tablet Styles */
@@ -24,6 +53,10 @@ html {
   body {
       background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
   }
+  #navbar-mobile {
+    visibility: hidden;
+  }
+
 }
 
 /* Desktop Styles */
@@ -32,181 +65,30 @@ html {
   body {
       background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
   }
+  #navbar-mobile {
+    visibility: hidden;
+  }
 }
-
-.desc {
-  text-align: left;
-}
-
-.bold {
-  font-weight:bold;
-  text-align: left;
-}
-.main-picture {
-  text-align: center;
-  margin-top: 150px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.hours {
-  border: 20px;
-}
-
-#navbar {
-        background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
-        width: 100%;
-        float: left;
-        margin: 0 0 1em 0;
-        padding: 0;
-}
-
-.h2 menu-header {
-  margin-bottom: -20px;
-}
-
-
-/* horizontal lines, but invisible for spacing on certain niches of website */
-
-hr {
-  visibility: hidden;
-  clear: both;
-}
-
-/* navbar for mobile */
-
-
-
-.navbar-brand,
-.navbar-text {
-  text-align: center;
-  font-family: 'Bangers', arial;
-  text-shadow: 4px 4px 4px #aaa;
-
-}
-.nav-link {
-  color: black;
-  font-family: 'Bangers', 'sans-serif';
-  font-size: 25px;
-  text-shadow: 4px 4px 4px #fff;
-
-}
-
-
-/* carousel elements */
-.d-block {
-  height: 400px;
-  width: 100px;
-  overflow: visible;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10%;
-  max-height: 100%;
-  max-width: 100%;
-  /* min-width: auto;
-  min-height: auto; */
-  margin-top: 10px;
-}
-
-.restoname
-.number {
-  font-size: 50px;
-}
-
 
 /* resizing for different screens, keeps the dimensions still intact */
 @media only screen and (min-width: 10px) and (max-width: 1220px) {
   .d-block {
-    height: 400px;
-    width: 100px;
+    display: block;
     overflow: visible;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
-    max-height: auto;
-    max-width: auto;
+    max-height: 100%;
+    max-width: 100%;
     min-width: auto;
     min-height: auto;
     margin-top: 10px;
   }
 }
-.carousel-desc {
-    position: relative;
-    left: auto;
-    right: auto;
-    top: -50px;
-    color: #fff;
-    font-family: 'Bangers', 'sans-serif';
-    font-size: 30px;
-    text-shadow: 4px 4px 4px #000000;
-}
-.body {
-    font-family: 'Proza Libre', sans-serif;
-}
-
-.header .logo {
-    padding-bottom: 10px;
-    padding-top: 50px;
-}
-
-.hours-title {
-    font-family: 'Proza Libre', sans-serif;
-    background: transparent;
-    border-color: #129CF3;
-    font-size: 19px;
-    text-transform: uppercase;
-    border-radius: 3px;
-
-}
-
-.hours {
-  text-align: center;
-}
-
-.menuItem h2{
-    font-size: 25px;
-    text-align: center;
-}
-.menu-header {
-  font-family: 'Hammersmith One', 'sans-serif';
-  color: black;
-  text-shadow: 4px 4px 4px #ffff66;
-  padding-top: 5px;
-
-}
-
-.picture {
-  height: auto;
-  width: auto;
-  max-width: 500px;
-  max-height: 500px;
-  padding-left: 20px;
-}
-
-/* .top-picture{
-  padding-top: 100px;
-  height: auto;
-  width: auto;
-  max-width: 2500px;
-  max-height: 950px;
-} */
-
-.top-picture{
-  padding-top: 100px;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.container {
-  padding-top: 100px;
-}
 
 /* To make it that mobile screens space the headings properly */
-/* Ideally anything smaller than a laptop/desktop */
+/* Ideally anything smaller than a laptop/desktop  */
 @media only screen and (max-width: 960px) {
   .container {
     padding-top: 150px;
@@ -231,36 +113,416 @@ hr {
     font-size: 25px;
     color:#FFCF0D;
     width: 250px;
-    background: linear-gradient(to left, #ff9900 2%, #e8710c 45%);
+    background: linear-gradient(to left, #ff9900 2%, #e8710c 65%);
 }
+} 
+
+
+/* ----------------------------------------------------------------------- */
+/* 3. Text / Text Boxes */
+.hoursOperation {
+  font-family: 'Proza Libre', sans-serif;
+  border-color: #129CF3;
+  font-size: 19px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: left;
+  
 }
 
- .navbar-toggler-icon {
-   position: relative;
-   left: -29px;
-   font-size: 20px;
- }
+#subText {
+  text-align: center;
+}
+
+.desc {
+  text-align: left;
+}
+
+.bold {
+  font-weight:bold;
+  text-align: left;
+}
+
+.hours {
+  border: 20px;
+}
 
 
+.menuHeader {
+font-family: 'Hammersmith One', 'sans-serif';
+color: black;
+text-shadow: 4px 4px 4px #ffff66;
+padding-top: 5px;
+text-align: center;
+}
+
+.subMenuHeader {
+  font-family: 'Hammersmith One', 'sans-serif';
+  color: #f0f00f;
+  text-shadow: 4px 4px 4px #ff5900;
+  padding-top: 5px;
+
+}
+
+.h2 {
+  margin-bottom: -20px;
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+/* horizontal lines, but invisible for spacing on certain niches of website */
+
+hr {
+  visibility: hidden;
+  clear: both;
+}
+
+li {
+  border: 1px solid white;
+  height: 45px;
+  max-height:100%;
+  border-radius: 20px;
+}
+
+.table td, .table th,
+.menuItem {
+  color: #ffffff;
+}
 
 /* Operation time-block */
 .menu-timeframe {
   padding-top: 25px;
-  padding-bottom: 25px;
 }
 
-.menuItem {
+.menuItem,
+.hoursOperation,
+#storePic {
   border: 1px dashed #ff590D;
 	box-shadow: 0 0 0 3px #ff590D, 0 0 0 5px #FFCF0D, 0 0 0 10px #E8710C, 0 0 2px 10px #FFCF0D;
   margin-top: 25px;
   margin-bottom: 20px;
-  background: linear-gradient(to left, #ff9900 2%, #e8710c 78%);
-
-
+  background: linear-gradient(to right, #e94200 2%, #d81c03 78%);
+  border-radius: 20px 20px 20px 20px;
 }
 
 
-/* Map dimensions at bottom of website */
-.map {
-  margin: auto;
+#footer {
+  color: black;
 }
+/* ----------------------------------------------------------------------- */
+
+/* 4. Pictures */
+
+.mainPicture {
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  border: 3px solid red;
+  border-radius: 20%;
+}
+
+#logo {
+  border-radius: 25px;
+  border: 3px solid red;
+  display: block;
+  margin-top: 5px;
+  float: left;
+}
+
+#storePic {
+  display: flex;
+  margin: 0 auto;
+  max-width: 450px;
+  max-height: 450px;
+}
+
+
+.top-picture{
+  padding-top: 10px;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carousel {
+  display: block;
+  margin: 0 auto;
+  width:500px;
+  height:360px;
+  max-width: 80%;
+  overflow-x: hidden;
+}
+
+/* carousel elements */
+.d-block, w-100,
+carousel-item{
+  overflow: hidden;
+  display: block;
+  width: 10px;
+  height: 300px;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 6%;
+  border: 5px solid #ff5900; 
+}
+
+.carousel {
+  border: 5px solid #ff5900; 
+  height: 100%;
+  max-width: 100%;
+  border-radius: 10%;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+}
+
+/* The text on the carousel pictures and other pictures */
+.carousel-desc {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: -50px;
+  color: #fff;
+  font-family: 'Bangers', 'sans-serif';
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #000000;
+}
+
+#menuShowcase {
+  position: relative;
+  text-align: center;
+  color: red;
+  font-family: 'Bangers', 'sans-serif';
+  font-size: 20px;
+  text-shadow: 3px 5px 7px #ffffff;
+}
+
+.menuPic {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  border-radius: 20%;
+  border: 1px dashed #E8710C;
+}
+
+
+#rotatedPic {
+  image-orientation: from-image;
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+
+/* 5. Map */
+
+#map {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* 6. Navigation Bar */
+
+.sideNav {
+  z-index: 1110;
+  position: fixed;
+  width: 250px;
+  height: 500px;
+  max-width: 100%;
+  max-height: 100%;
+  background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
+  transition: all .5 ease;
+  overflow-y: visible;
+  border-radius: 5%;
+  border: 2px solid #d81c03;
+}
+
+.sideNav header {
+  color: white;
+  margin: 10px 10px 10px 10px;
+  background: #ff5900;
+  
+}
+
+.sideNav  ul a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  transition: .4s;
+  border-radius: 30px;
+  left: -100px;
+  font-family: 'Hammersmith One';
+}
+
+
+#check {
+  font-family: 'Hammersmith One';
+}
+
+ul li:hover a {
+  padding-left: 10px;
+  color: orange;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  z-index: 1111;
+  position: fixed;
+  cursor: pointer;
+  background: #d63f03;
+  border-radius: 0px;
+  padding: 6px 6px;
+}
+
+label #btn
+{
+  z-index: 1111;
+  left: 40px;
+  top: 25px;
+  font-size: 40px;
+  color: #ffffff;
+  padding: 6px 6px;
+  transition: all ease .5s;
+  visibility: hidden;
+}
+
+label #cancel {
+  left: 210px;
+  top: 17px;
+  font-size: 20px;
+  color: #d7e5e9;
+  padding: 4px 5px;  
+}
+
+#check:checked ~ .sideNav {
+  left: -250px;
+  transition: all ease .5s;
+}
+
+#check:checked ~ label #btn {
+  left: -250px;
+  pointer-events: none;
+  transition: all ease .5s
+}
+
+#check:checked ~ label #cancel {
+  left: 0;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* 6b. navbar for mobile */
+.navbar-brand,
+.navbar-text {
+  text-align: center;
+  font-family: 'Bangers', arial;
+  text-shadow: 4px 4px 4px #ffffff;
+
+}
+.nav-link {
+  color: black;
+  font-family: 'Hammersmith One', 'sans-serif';
+  font-size: 15px;
+  max-height: 100%;
+  text-shadow: 3px 3px 8px #fff;
+  border-bottom: 10px;
+}
+
+.navbar-toggler-icon {
+  position: relative;
+  left: -29px;
+  font-size: 20px;
+}
+
+#check:checked ~ section {
+  margin-left: 195px;
+}
+
+.navbar-nav {
+  border-radius: 20px;
+  width: 300px;
+  
+}
+
+#mobileNavBar {
+  width:55%;
+  margin-bottom: 10px;
+}
+/* ----------------------------------------------------------------------- */
+
+/* 7. Comments */
+footer {
+
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* 8. Misc/Etc */
+
+#redText {
+  color: #ff008cfa;
+  text-shadow: 2px 1px 2px #000000;
+  font-weight: 600;
+}
+
+#simpleMenu {
+    float: right;
+    padding:0.35em 1.2em;
+    border:0.1em solid #ffffff;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Hammersmith One',sans-serif;
+    font-weight:300;
+    color:#fffb00;
+    text-align:center;
+    transition: all 0.2s;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 10px 10px 10px;
+  }
+
+#simpleMenu:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+@media all and (max-width:30em){
+
+  #simpleMenu {
+  display:block;
+  margin:0.4em auto;
+   }
+ } 
+
+
+/* ----------------------------------------------------------------------- */
+/* End */
