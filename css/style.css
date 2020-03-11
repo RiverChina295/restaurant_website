@@ -36,7 +36,7 @@ html {
 /* as of this version the side nav bar is adjustable to all screen types. */
 
 /* Mobile Styles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   body {
       background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
   }
@@ -49,7 +49,7 @@ html {
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 600px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   body {
       background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
   }
@@ -322,12 +322,47 @@ carousel-item{
 
 /* 5. Map */
 
+
 #map {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
+   display: block;
+   margin: 0 auto;
+   border-top: 1px solid #000000;
+   background: #d9f72d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f52d00), to(#d9f72d));
+   background: -webkit-linear-gradient(top, #f52d00, #d9f72d);
+   background: -moz-linear-gradient(top, #f52d00, #d9f72d);
+   background: -ms-linear-gradient(top, #f52d00, #d9f72d);
+   background: -o-linear-gradient(top, #f52d00, #d9f72d);
+   padding: 19px 38px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 21px;
+   font-family: "Hammersmith One", serif;
+   text-decoration: none;
+   }
+
+#map > a {
+  color: #ffffff;
+  padding: 40px;
 }
+
+#map:hover {
+   border-top-color: #de2b03;
+   background: #de2b03;
+   color: #ccc;
+   }
+#map:active {
+   border-top-color: #fc2600;
+   background: #fc2600;
+   }
+
+
 
 /* ----------------------------------------------------------------------- */
 
@@ -515,6 +550,7 @@ footer {
     color:#000000;
     background-color:#FFFFFF;
     }
+
 @media all and (max-width:30em){
 
   #simpleMenu {
