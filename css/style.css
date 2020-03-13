@@ -187,7 +187,8 @@ li {
 
 .table td, .table th,
 .menuItem {
-  color: #ffffff;
+    	color: #ebe7e7;
+  	font-weight: 700;
 }
 
 /* Operation time-block */
