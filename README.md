@@ -1,4 +1,11 @@
 # Website for China River, Beverly MA
+
+Updates as of March 12th, 2020
+- Pictures now have subtitles describing what they are
+- Downloadable PDF menu with prices for accessibility
+- Improved visual layout
+- Side navigation added in replace of the top navigation bar for full sized screens
+
 Hello all, this is a self supported project I took on just to help give the restaurant I work with
 a working website, and one that can be hosted on its own accord without having to pay other companies
 exorbitant amounts of money to use their software, for a single static page website.
