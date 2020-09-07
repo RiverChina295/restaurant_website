@@ -16,12 +16,48 @@ Please use the find feature to find the section of the CSS you want by referenci
 
 /* 1. Main */
 
-html {
+html > body {
   scroll-behavior: auto;
-  background-color: linear-gradient(to left, #ff9900 2%, #e8710c 85%);
-  
-}
+  /* multiple color stages in the gradient to create a smooth color flow */
+  background: repeating-linear-gradient(to left,#f08658 4%, #ff6f48 19%, #ff6f54 34%, #f08658 47%,
+                                                #ff6f47 56.5%,#f08658 61%,  #e6886e 65%, #ff9d64 74%, #e6886e 99%);
+  /* 2. Screen Adjustments */
 
+
+/* as of this version the side nav bar is adjustable to all screen types. */
+}
+/* Mobile Styles */
+  @media only screen and (max-width: 600px) {
+  /*   body {
+        background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
+    } */
+    .sideNavBar {
+      visibility: hidden;
+    }
+  
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+  /*   body {
+        background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
+    } */
+    #navbar-mobile {
+      visibility: hidden;
+    }
+  
+  }
+  
+  /* Desktop Styles */
+  /* Although having all 3 properties here isn't needed, will be left for a reference point on other projects for now */
+  @media only screen and (min-width: 961px) {
+  /*   body {
+        background: linear-gradient(to left, #fffff0 15%, #d63706 55%);
+    } */
+    #navbar-mobile {
+      visibility: hidden;
+    }
+  }
 
 
 .container {
@@ -30,43 +66,7 @@ html {
 
 /* ----------------------------------------------------------------------- */
 
-/* 2. Screen Adjustments 
 
-
-/* as of this version the side nav bar is adjustable to all screen types. */
-
-/* Mobile Styles */
-@media only screen and (max-width: 600px) {
-  body {
-      background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
-  }
-  .sideNavBar {
-    visibility: hidden;
-  }
-
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 601px) and (max-width: 960px) {
-  body {
-      background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
-  }
-  #navbar-mobile {
-    visibility: hidden;
-  }
-
-}
-
-/* Desktop Styles */
-/* Although having all 3 properties here isn't needed, will be left for a reference point on other projects for now */
-@media only screen and (min-width: 961px) {
-  body {
-      background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
-  }
-  #navbar-mobile {
-    visibility: hidden;
-  }
-}
 
 /* resizing for different screens, keeps the dimensions still intact */
 @media only screen and (min-width: 10px) and (max-width: 1220px) {
@@ -120,7 +120,6 @@ html {
 /* 3. Text / Text Boxes */
 .hoursOperation {
   font-family: 'Proza Libre', sans-serif;
-  border-color: #129CF3;
   font-size: 19px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -148,16 +147,16 @@ html {
 
 .menuHeader {
 font-family: 'Hammersmith One', 'sans-serif';
-color: black;
-text-shadow: 4px 4px 4px #ffff66;
+color: #ffffff;
+text-shadow: 4px 4px 4px #000000;
 padding-top: 5px;
 text-align: center;
 }
 
 .subMenuHeader {
   font-family: 'Hammersmith One', 'sans-serif';
-  color: #f0f00f;
-  text-shadow: 4px 4px 4px #ff5900;
+  color: #000000;
+  text-shadow: 4px 4px 4px #a7a4a4;
   padding-top: 5px;
 
 }
@@ -168,7 +167,7 @@ text-align: center;
 }
 
 p {
-  color: #ffffff;
+  color: #a7a4a4;
 }
 
 /* horizontal lines, but invisible for spacing on certain niches of website */
@@ -187,8 +186,8 @@ li {
 
 .table td, .table th,
 .menuItem {
-    	color: #ebe7e7;
-  	font-weight: 700;
+    	color: #000000;
+  	font-weight: 500;
 }
 
 /* Operation time-block */
@@ -203,7 +202,8 @@ li {
 	box-shadow: 0 0 0 3px #ff590D, 0 0 0 5px #FFCF0D, 0 0 0 10px #E8710C, 0 0 2px 10px #FFCF0D;
   margin-top: 25px;
   margin-bottom: 20px;
-  background: linear-gradient(to right, #e94200 2%, #d81c03 78%);
+  background: #ffffff;
+ /*  background: linear-gradient(to right, #e94200 2%, #d81c03 78%); */
   border-radius: 20px 20px 20px 20px;
 }
 
@@ -216,17 +216,17 @@ li {
 /* 4. Pictures */
 
 .mainPicture {
-  text-align: center;
+  
   max-width: 100%;
   max-height: 100%;
-  border: 3px solid red;
-  border-radius: 20%;
+  display: block;
+  border: 1px solid red;
+  border-radius: 5%;
 }
 
 #logo {
   border-radius: 25px;
   border: 3px solid red;
-  display: block;
   margin-top: 5px;
   float: left;
 }
@@ -295,10 +295,10 @@ carousel-item{
 #menuShowcase {
   position: relative;
   text-align: center;
-  color: red;
+  color: #ccc5c2;
   font-family: 'Bangers', 'sans-serif';
-  font-size: 20px;
-  text-shadow: 3px 5px 7px #ffffff;
+  font-size: 30px;
+  text-shadow: 3px 5px 7px #000000;
 }
 
 .menuPic {
@@ -382,7 +382,7 @@ carousel-item{
 }
 
 .sideNav header {
-  color: white;
+  color: ffffff;
   margin: 10px 10px 10px 10px;
   background: #ff5900;
   
@@ -523,9 +523,10 @@ footer {
 /* 8. Misc/Etc */
 
 #redText {
-  color: #ff008cfa;
-  text-shadow: 2px 1px 2px #000000;
-  font-weight: 600;
+  color: #f3593efa;
+  border: 1px solid white;
+  text-shadow: -1px 1px 2px -1px #000000;
+  font-weight: 400;
 }
 
 #simpleMenu {
@@ -547,7 +548,7 @@ footer {
 
 #simpleMenu:hover{
     color:#000000;
-    background-color:#FFFFFF;
+    background-color:#ffffff;
     }
 
 @media all and (max-width:30em){
@@ -555,7 +556,7 @@ footer {
   #simpleMenu {
   display:block;
   margin:0.4em auto;
-   }
+ }
  } 
 
 
