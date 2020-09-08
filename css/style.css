@@ -19,9 +19,11 @@ Please use the find feature to find the section of the CSS you want by referenci
 html > body {
   scroll-behavior: auto;
   /* multiple color stages in the gradient to create a smooth color flow */
-  background: repeating-linear-gradient(to left,#f08658 4%, #ff6f48 19%, #ff6f54 34%, #f08658 47%,
-                                                #ff6f47 56.5%,#f08658 61%,  #e6886e 65%, #ff9d64 74%, #e6886e 99%);
-  /* 2. Screen Adjustments */
+  background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
+    #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
+    #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%);
+
+ /* 2. Screen Adjustments */
 
 
 /* as of this version the side nav bar is adjustable to all screen types. */
@@ -342,8 +344,8 @@ carousel-item{
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: #000000;
-   font-size: 21px;
-   font-family: "Hammersmith One", serif;
+   font-size: 200%;
+   font-family: "Bangers", serif;
    text-decoration: none;
    }
 
@@ -528,6 +530,13 @@ footer {
   border: 1px solid white;
   text-shadow: -1px 1px 2px -1px #000000;
   font-weight: 400;
+}
+
+#greenText {
+  color: #55a819;
+  border: 1px solid white;
+  text-shadow: -1px 1px 2px -1px #000000;
+  font-weight: 500;
 }
 
 #simpleMenu {
