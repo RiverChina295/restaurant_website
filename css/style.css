@@ -186,6 +186,7 @@ li {
 
 .table td, .table th,
 .menuItem {
+  font-family: bangers;
     	color: #000000;
   	font-weight: 500;
 }
