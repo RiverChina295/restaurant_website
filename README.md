@@ -1,7 +1,7 @@
 # Website for China River, Beverly MA
 
 October 1st, 2020
--Update to PDF menu for formatting and size reduction
+- Update to PDF menu for formatting and size reduction
 
 
 March 12, 2020
