@@ -190,6 +190,9 @@ li {
   border: 1px solid transparent;
   font-size: 20px;
   font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 }
 
 .table td, .table th,
