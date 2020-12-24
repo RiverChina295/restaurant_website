@@ -186,6 +186,12 @@ li {
   border-radius: 20px;
 }
 
+#notice {
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-style: italic;
+}
+
 .table td, .table th,
 .menuItem {
   font-family: bangers;
