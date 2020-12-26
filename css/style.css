@@ -120,6 +120,11 @@ html > body {
 
 /* ----------------------------------------------------------------------- */
 /* 3. Text / Text Boxes */
+
+.newyears {
+  margin-top: 80px;
+}
+
 .hoursOperation {
   font-family: 'Proza Libre', sans-serif;
   font-size: 19px;
@@ -186,12 +191,10 @@ li {
   border-radius: 20px;
 }
 
-#notice {
+.notice {
   border: 1px solid transparent;
   font-size: 20px;
-  font-style: italic;
-  margin: 10px;
-
+  padding-bottom: 50px;
 }
 
 .table td, .table th,
@@ -225,6 +228,11 @@ li {
 /* ----------------------------------------------------------------------- */
 
 /* 4. Pictures */
+
+.newyearsbanner {
+  width: 100%;
+  height: auto;
+}
 
 .mainPicture {
   
