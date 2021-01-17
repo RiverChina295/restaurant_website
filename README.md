@@ -1,5 +1,13 @@
 # Website for China River, Beverly MA
 
+January 16th, 2021
+- Created a custom icon to represent the link for the PDF menu, the drab white button wasn't very appealing to me and felt like it was difficult to find.
+- Changing PDF menu to actual pictures of menu, increases size but leaves less room for confusion and allows customers to view the paper menu as printed by the restaurant
+- Improved navigation (able to merge navigation into one singular entity instead of having 2 based on screen size
+  -Tablet views are still a little wonky and will be evaluated in a future update
+- Reformatted the platters and combo plates to give them more of a clean look and reduce potential confusion
+
+
 October 1st, 2020
 - Update to PDF menu for formatting and size reduction
 
