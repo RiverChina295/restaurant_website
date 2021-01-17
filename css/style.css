@@ -16,55 +16,19 @@ Please use the find feature to find the section of the CSS you want by referenci
 
 /* 1. Main */
 
+
 html > body {
-  scroll-behavior: auto;
   /* multiple color stages in the gradient to create a smooth color flow */
   background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
     #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
-    #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%);
-
- /* 2. Screen Adjustments */
-
-
-/* as of this version the side nav bar is adjustable to all screen types. */
+    #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
 }
-/* Mobile Styles */
-  @media only screen and (max-width: 600px) {
-  /*   body {
-        background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
-    } */
-    .sideNavBar {
-      visibility: hidden;
-    }
-  
-  }
-  
-  /* Tablet Styles */
-  @media only screen and (min-width: 601px) and (max-width: 960px) {
-  /*   body {
-        background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
-    } */
-    #navbar-mobile {
-      visibility: hidden;
-    }
-  
-  }
-  
-  /* Desktop Styles */
-  /* Although having all 3 properties here isn't needed, will be left for a reference point on other projects for now */
-  @media only screen and (min-width: 961px) {
-  /*   body {
-        background: linear-gradient(to left, #fffff0 15%, #d63706 55%);
-    } */
-    #navbar-mobile {
-      visibility: hidden;
-    }
-  }
 
 
 .container {
   padding-top: 10px;
 }
+
 
 /* ----------------------------------------------------------------------- */
 
@@ -75,7 +39,7 @@ html > body {
   .d-block {
     display: block;
     overflow: visible;
-    display: block;
+    display:block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
@@ -87,35 +51,20 @@ html > body {
   }
 }
 
-/* To make it that mobile screens space the headings properly */
-/* Ideally anything smaller than a laptop/desktop  */
-@media only screen and (max-width: 960px) {
-  .container {
-    padding-top: 150px;
-
+@media only screen and (min-width: 10px) and (max-width: 768px) {
+  #mobileNavBar {
+    display: flex;
   }
-}
-@media (max-width: 1175px) {
-  .navbar .navbar-brand {float:none;display: inline-block;}
-  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
-  .navbar .navbar-nav {float:none !important;}
-  .nav-item{width:100%;text-align:left;}
-  .navbar-toggler {display: block !important;}
-  .navbar-toggleable-sm.collapse {display:none !important}
-  .navbar-toggleable-sm.collapse.in {display:block !important}
+
 }
 
-@media (max-width:1125px) {
- .navbar-toggler {
-    border: 2px solid #FFCF0D;
-    font-family: 'Bangers', 'sans-serif';
-    text-shadow: 4px 4px 4px #000000;
-    font-size: 25px;
-    color:#FFCF0D;
-    width: 250px;
-    background: linear-gradient(to left, #ff9900 2%, #e8710c 65%);
+@media (min-width: 800px) {}
+  .navbar-expand-md .navbar-toggler {
+    display: none;
+    overflow: hidden;
 }
-} 
+
+
 
 
 /* ----------------------------------------------------------------------- */
@@ -185,13 +134,12 @@ hr {
 }
 
 li {
-  border: 1px solid white;
-  height: 45px;
-  max-height:100%;
-  border-radius: 20px;
+  display: block;
+  color: black;
+  align-items: center;  
 }
 
-#notice {
+.notice {
   border: 1px solid transparent;
   font-size: 20px;
   padding-bottom: 50px;
@@ -235,12 +183,11 @@ li {
 }
 
 .mainPicture {
-  
   max-width: 100%;
-  max-height: 100%;
+  max-height: auto;
   display: block;
   border: 1px solid red;
-  border-radius: 5%;
+  margin-top: 10rem;
 }
 
 #logo {
@@ -314,7 +261,7 @@ carousel-item{
 #menuShowcase {
   position: relative;
   text-align: center;
-  color: #ccc5c2;
+  color: #ffffff;
   font-family: 'Bangers', 'sans-serif';
   font-size: 30px;
   text-shadow: 3px 5px 7px #000000;
@@ -329,10 +276,19 @@ carousel-item{
   border: 1px dashed #E8710C;
 }
 
+#pdf-menu {
+  display: flex;  
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+}
 
 #rotatedPic {
   image-orientation: from-image;
 }
+
 
 
 
@@ -346,7 +302,6 @@ carousel-item{
    margin: 0 auto;
    border-top: 1px solid #000000;
    background: #d9f72d;
-   background: -webkit-gradient(linear, left top, left bottom, from(#f52d00), to(#d9f72d));
    background: -webkit-linear-gradient(top, #f52d00, #d9f72d);
    background: -moz-linear-gradient(top, #f52d00, #d9f72d);
    background: -ms-linear-gradient(top, #f52d00, #d9f72d);
@@ -386,9 +341,16 @@ carousel-item{
 
 /* 6. Navigation Bar */
 
+.navbar-toggler-icon {
+  display: unset;
+  font-family: 'Hammersmith One', sans-serif;
+  text-shadow: 3px 3px 8px #fff;
+  font-size: 30px;
+}
 .sideNav {
-  z-index: 1110;
+  /* z-index: 1110; */
   position: fixed;
+  top: 0;
   width: 250px;
   height: 500px;
   max-width: 100%;
@@ -428,8 +390,8 @@ ul li:hover a {
 }
 
 a {
-  width: 100%;
-  height: 100%;
+  display: block ruby;
+  height: auto;
 }
 
 ul {
@@ -488,25 +450,32 @@ label #cancel {
   left: 0;
 }
 
+#mobileNavBar {
+  background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
+    #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
+    #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
+}
+
 /* ----------------------------------------------------------------------- */
 
-/* 6b. navbar for mobile */
+
+
+/* 6b. navbar for mobile
 .navbar-brand,
 .navbar-text {
   text-align: center;
   font-family: 'Bangers', arial;
   text-shadow: 4px 4px 4px #ffffff;
 
-}
-.nav-link {
+} */
+ .nav-link {
   color: black;
   font-family: 'Hammersmith One', 'sans-serif';
-  font-size: 15px;
-  max-height: 100%;
+  font-size: 20px;
   text-shadow: 3px 3px 8px #fff;
   border-bottom: 10px;
-}
-
+} 
+/*
 .navbar-toggler-icon {
   position: relative;
   left: -29px;
@@ -516,17 +485,20 @@ label #cancel {
 #check:checked ~ section {
   margin-left: 195px;
 }
+*/
 
 .navbar-nav {
-  border-radius: 20px;
-  width: 300px;
-  
-}
+  display: flexbox;
+  font-family: 'Hammersmith One', 'sans-serif';
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
+    #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
+    #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
+} 
 
-#mobileNavBar {
-  width:55%;
-  margin-bottom: 10px;
-}
+
 /* ----------------------------------------------------------------------- */
 
 /* 7. Comments */
