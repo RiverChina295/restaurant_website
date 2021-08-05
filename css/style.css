@@ -26,12 +26,13 @@ html > body {
 
 
 .container {
-  padding-top: 10px;
+  padding-top: 100px;
 }
 
 
 /* ----------------------------------------------------------------------- */
 
+/* 2. Screen Adjustments */
 
 
 /* resizing for different screens, keeps the dimensions still intact */
@@ -51,17 +52,12 @@ html > body {
   }
 }
 
-@media only screen and (min-width: 10px) and (max-width: 768px) {
-  #mobileNavBar {
-    display: flex;
-  }
 
-}
-
-@media (min-width: 800px) {}
-  .navbar-expand-md .navbar-toggler {
+@media screen and (min-width: 769xp) {
+  .navbar-nav {
     display: none;
     overflow: hidden;
+}
 }
 
 
@@ -150,6 +146,19 @@ li {
   font-family: bangers;
     	color: #000000;
   	font-weight: 500;
+
+}
+
+.table tr, .tbody {
+  border: 1px solid #000;
+}
+
+.table #redText {
+  border: 1px solid #000;
+}
+
+.table #hideMe {
+  border-top: 1px solid #fff;
 }
 
 /* Operation time-block */
@@ -165,7 +174,6 @@ li {
   margin-top: 25px;
   margin-bottom: 20px;
   background: #ffffff;
- /*  background: linear-gradient(to right, #e94200 2%, #d81c03 78%); */
   border-radius: 20px 20px 20px 20px;
 }
 
@@ -237,7 +245,6 @@ carousel-item{
 }
 
 .carousel {
-  border: 5px solid #ff5900; 
   height: 100%;
   max-width: 100%;
   border-radius: 10%;
@@ -277,12 +284,26 @@ carousel-item{
   border: 1px dashed #E8710C;
 }
 
+.galleryPic {
+  display: block;
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+  border-radius: 10%;
+  border: 1px dashed #E8710C;
+}
+
 #pdf-menu {
   display: flex;  
   margin: 0 auto;
   justify-content: center;
   width: 100%;
   height: auto;
+  max-width: 800px;
+  max-height: 600px;
+  
 
 }
 
@@ -348,20 +369,22 @@ carousel-item{
   text-shadow: 3px 3px 8px #fff;
   font-size: 30px;
 }
-.sideNav {
-  /* z-index: 1110; */
-  position: fixed;
-  top: 0;
-  width: 250px;
-  height: 500px;
-  max-width: 100%;
-  max-height: 100%;
-  background: linear-gradient(to left, #ff9900 10%, #ffcc00 66%);
-  transition: all .5 ease;
-  overflow-y: visible;
-  border-radius: 5%;
-  border: 2px solid #d81c03;
+
+@media screen and (min-width: 769px) {
+.navbar-expand-md .navbar-collapse {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
 }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .navbar-nav {
+    visibility: hidden !important;
+  }
+} */
+
 
 .sideNav header {
   color: ffffff;
@@ -387,7 +410,7 @@ carousel-item{
 
 ul li:hover a {
   padding-left: 10px;
-  color: orange;
+  color: #fd7474;
 }
 
 a {
@@ -452,28 +475,23 @@ label #cancel {
 }
 
 #mobileNavBar {
+  opacity: 95%;
   background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
-    #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
-    #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
+  #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
+  #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
 }
 
 /* ----------------------------------------------------------------------- */
 
 
 
-/* 6b. navbar for mobile
-.navbar-brand,
-.navbar-text {
-  text-align: center;
-  font-family: 'Bangers', arial;
-  text-shadow: 4px 4px 4px #ffffff;
+/* 6b. navbar for mobile */
 
-} */
  .nav-link {
-  color: black;
+  color: #f8f8f8;
   font-family: 'Hammersmith One', 'sans-serif';
   font-size: 20px;
-  text-shadow: 3px 3px 8px #fff;
+  text-shadow: 1px 3px 10px rgb(3, 3, 3);
   border-bottom: 10px;
 } 
 /*
@@ -488,16 +506,16 @@ label #cancel {
 }
 */
 
-.navbar-nav {
+/* .navbar-nav {
   display: flexbox;
   font-family: 'Hammersmith One', 'sans-serif';
   align-items: center;
   width: 100%;
   height: auto;
   background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
-    #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
-    #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
-} 
+  #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
+  #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
+}  */
 
 
 /* ----------------------------------------------------------------------- */
@@ -519,6 +537,13 @@ footer {
   border: 1px solid white;
   text-shadow: -1px 1px 2px -1px #000000;
   font-weight: 400;
+}
+
+#redSubHeader {
+    color: #f3593efa;
+    border: 1px solid white;
+    text-shadow: -1px 1px 2px -1px #000000;
+    font-weight: 400;
 }
 
 #greenText {
