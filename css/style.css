@@ -10,7 +10,7 @@ Please use the find feature to find the section of the CSS you want by referenci
    6. Navigation Bar
    6b. Mobile Navigation Bar
    7. Comments
-   8. Etc
+   8. Etc (Buttons)
    ----------------------------------------------------------------------- */
 
 
@@ -146,15 +146,18 @@ li {
   font-family: bangers;
     	color: #000000;
   	font-weight: 500;
+    border: none;
+    
 
 }
 
 .table tr, .tbody {
-  border: 1px solid #000;
+  border: none;
+
 }
 
 .table #redText {
-  border: 1px solid #000;
+  border:
 }
 
 .table #hideMe {
@@ -582,6 +585,32 @@ footer {
   margin:0.4em auto;
  }
  } 
+
+#phonenum {
+  position: relative;
+  display:block;
+  margin-right: auto;
+  margin-bottom: 10%;
+  border-radius: 10%;
+
+}
+
+
+@media screen and (max-width: 769px)  {
+  #phonenum {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  }
+}
+
+@media screen and (min-width: 769px)  {
+  #phonenum {
+  height: 10%;
+  width: 10%;
+  margin-left: 45%;
+
+  }
+}
 
 
 /* ----------------------------------------------------------------------- */

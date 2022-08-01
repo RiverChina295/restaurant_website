@@ -9,50 +9,56 @@
 
 <!-- top of tab -->
 
-<!-- Bootstrap JS -->
+<!-- Start of Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/fc0bcca8a3.js" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<!-- End of Bootstrap JS -->
+
+<script src="https://kit.fontawesome.com/fc0bcca8a3.js" crossorigin="anonymous">
+</script>
+
+<!-- Start of Header -->
 <head>
+<!-- Icon in Tab -->
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-  <!-- manually imported google fonts-->
+<!-- manually imported google fonts-->
 <link href="https://fonts.googleapis.com/css?family=Bangers|Hammersmith+One&display=swap" rel="stylesheet">
 
-
  <!-- Add the script to the HEAD of your document -->
-
-  <!-- Find a way to make this work for the side nav bar, until then, does nothing with current setup -->
-
 <SCRIPT LANGUAGE="JavaScript">
-
  // This snippet closes collapsible navbar after clicked outside
- $(document).ready(function () {
-  $(document).click(function (event) {
-      var clickover = $(event.target);
-      var _opened = $(".navbar-collapse").hasClass("show");
-      if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-          $(".navbar-toggler").click();
-      }
+$(document).ready(function () 
+{
+  $(document).click(function (event) 
+  {   
+    var clickover = $(event.target);
+    var _opened = $(".navbar-collapse").hasClass("show");
+    if (_opened === true && !clickover.hasClass("navbar-toggler")) 
+    {
+    $(".navbar-toggler").click();
+    }
   });
 });
 //  End 
 </script>
-
+<!-- Text in Tab -->
   <title class="scroll-left">
     China River Beverly, MA 
   </title>
-
 </head>
+<!-- End of Header -->
 
- <!-- main section of website, everything goes here  -->
-
+<!-- Start Of Body -->
+<!-- main section of website, everything goes here  -->
 <body>
- 
   <nav class="navbar navbar-expand-md fixed-top" id="mobileNavBar">
     <button class="navbar-toggler type=button btn-block" data-toggle="collapse" data-target="#collapsibleNavbar" id="mobileNavBar">
-      <span class="navbar-toggler-icon">Navigation</span>
+      <span class="navbar-toggler-icon">Quick Menu Navigation</span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
@@ -121,20 +127,26 @@
         <div class="logo">
           <div class="top-picture">
 
-
+<section>
+  <div class="col-sm-12">
+    <a href="tel:9789211184"><img id="phonenum" src="images/phone.png"></img></a>
+  <!-- <button id="phonenum" class="btn btn-info"><a href="tel:9789211184"></a>Call: 978-921-1184</button> -->
+</div>
+</section>
   <!-- First Carousel Slide Show-->
-  <div class="row">
-    <div class="col-md-12">
-      <p id="menuShowcase">Featured Items</p>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
+  <section>
+    <div class="row">
+      <div class="col-md-12">
+        <p id="menuShowcase">Featured Items</p>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="images/cliu.jpg" alt="First slide">
@@ -176,16 +188,14 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        </div>
-<!-- End of First Carousel and Onto the Second-->
-
-
-  </div>
-<!-- Carousel 2 End -->
+      </div>
+    </div>
+  </section>
+<!-- End of Carousel -->
 
 <!-- To be shifted to the outer edges of the entire website, static image as the customer scrolls to allow them to reference the business information -->
 <div class="container">
-<div class="col-md-12">
+  <div class="col-md-12">
           <!-- PDF Menu -->
           <div class="container">
           <a target="_blank" href="2021MenuPDF.pdf">
@@ -197,7 +207,7 @@
         </div>
         <!-- <br>
         <br> -->
-<section class="menu-timeframe">
+  <section class="menu-timeframe">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -236,7 +246,7 @@
     <div class="row">
       <div class="col-md-4">
         <h2 class="menuHeader"  id="apps">Pu-Pu Platters </h2>
-          <div class="menuItem" >
+          <div class="menuItem">
             <table class="table table-borderless table-sm">
               <thead>
                 <tr>
@@ -269,12 +279,12 @@
                   <br />
                 <table>
                   <tbody>
-                      <tr><td>duck (tan color)</td><td> &emsp; .50 </td><td>&emsp; 1.50</td>
+                      <tr><td>duck (tan color)</td><td> Small&emsp; .50 </td><td>&emsp;&emsp;Large &emsp;1.50</td>
                       <tr><td>ginger</td><td></td><td>.35</td></tr>
                       <tr><td>garlic chili</td><td></td><td>.35</td></tr>
                       <tr><td>brown gravy</td><td></td><td>1.25</td></tr>
                       <tr><td>Hoisin(plum)</td><td></td><td>.35</td></tr>
-                      <tr><td>Sweet & Sour (red)</td><td></td><td>1.50</td></tr>
+                      <tr><td>Sweet & Sour (red)</td><td></td><td>&emsp;&emsp;Large &emsp;1.50</td></tr>
                     </table>
                     <img class="menuPic" id="rotatedPic" src="images/sauces.jpg">
               </div>
@@ -327,12 +337,12 @@
                 </tr>
               </thead>
               <tbody>
-                <tr><td ><h5>A:</h5> Egg Rolls, Boneless ribs, Pork Strips, Chicken Wings</td><td>12.75</td></tr>
-                <tr><td ><h5>B:</h5> Chicken Fingers, Beef Teriyaki, Chicken Wings</td><td>11.75</td></tr>
-                <tr><td ><h5>C:</h5> Chicken Wings, Boneless Spareribs, Crab Rangoons</td><td>11.75</td></tr>
-                <tr><td ><h5>D:</h5> Egg Rolls, Chicken Fingers, Boneless Spareribs</td><td>11.75</td></tr>
-                <tr><td ><h5>E:</h5> Egg Rolls, Boneless Spareribs, Fried Shrimps, Beef Teriyaki</td><td>12.75</td></tr>
-                <tr><td ><h5>F:</h5> Chicken Fingers, Boneless Spareribs, Beef Teriyaki</td><td>11.75</td></tr>
+                <tr><td ><h5>App Platter A:</h5> Egg Rolls, Boneless ribs, Pork Strips, Chicken Wings</td><td>12.75</td></tr>
+                <tr><td ><h5>App Platter B:</h5> Chicken Fingers, Beef Teriyaki, Chicken Wings</td><td>11.75</td></tr>
+                <tr><td ><h5>App Platter C:</h5> Chicken Wings, Boneless Spareribs, Crab Rangoons</td><td>11.75</td></tr>
+                <tr><td ><h5>App Platter D:</h5> Egg Rolls, Chicken Fingers, Boneless Spareribs</td><td>11.75</td></tr>
+                <tr><td ><h5>App Platter E:</h5> Egg Rolls, Boneless Spareribs, Fried Shrimps, Beef Teriyaki</td><td>12.75</td></tr>
+                <tr><td ><h5>App Platter F:</h5> Chicken Fingers, Boneless Spareribs, Beef Teriyaki</td><td>11.75</td></tr>
               </tbody>
              </table>
            </div>
@@ -871,7 +881,7 @@
 </body>
 <footer>
   <br>
-    <p id="footer">Design and Maintained by Frank S Pelletier <a href="https://veltaine.github.io" target="_blank">(Portfolio)</a>  All Rights Reserved | 2021 | Prices are subject to change without notice. | Sorry, we do not accept checks.  </p>
+    <p id="footer">Design and Maintained by Frank S Pelletier <a href="https://veltaine.github.io" target="_blank">(Portfolio)</a>  All Rights Reserved | 2018-2022 | Prices are subject to change without notice. | Sorry, we do not accept checks.  </p>
     <img src="images/credit.png" alt="mastercard and visa logo">
     <p id="footer">Disclaimer: This website is being constantly improved and may not work optimally on all devices. 
       <br> Inquiries and Suggestions are welcome!  Thank you and we look forward to serving you!<br>

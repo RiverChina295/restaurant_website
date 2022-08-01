@@ -1,10 +1,19 @@
 # Website for China River, Beverly MA
 
+August 1st, 2022
+- Slotted in a few more comments to remind myself
+- Improved indentation of some HTML code for internal readability
+- *SOLVED* Removed table lines from menu items by setting border:none;
+- Added call button, will likely redesign, optimized for full screen and mobile screens
+- Changed navigation bar text from "Navigation" to "Quick Menu Navigation" 
+- Removed old PDF menu from backend
+- Cleaned up internal folder structure, will place menu gallery items in separate folder next revision, need to change path codes in HTML to reflect
+
 January 16th, 2021
 - Created a custom icon to represent the link for the PDF menu, the drab white button wasn't very appealing to me and felt like it was difficult to find.
 - Changing PDF menu to actual pictures of menu, increases size but leaves less room for confusion and allows customers to view the paper menu as printed by the restaurant
 - Improved navigation (able to merge navigation into one singular entity instead of having 2 based on screen size
-  -Tablet views are still a little wonky and will be evaluated in a future update
+- Tablet views are still a little wonky and will be evaluated in a future update
 - Reformatted the platters and combo plates to give them more of a clean look and reduce potential confusion
 
 
