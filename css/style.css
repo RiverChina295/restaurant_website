@@ -157,7 +157,7 @@ li {
 }
 
 .table #redText {
-  border:
+  border: none;
 }
 
 .table #hideMe {
@@ -579,12 +579,11 @@ footer {
     }
 
 @media all and (max-width:30em){
-
-  #simpleMenu {
+#simpleMenu {
   display:block;
   margin:0.4em auto;
- }
- } 
+  }
+} 
 
 #phonenum {
   position: relative;
@@ -592,8 +591,8 @@ footer {
   margin-right: auto;
   margin-bottom: 10%;
   border-radius: 10%;
-
 }
+
 
 
 @media screen and (max-width: 769px)  {
@@ -605,10 +604,11 @@ footer {
 
 @media screen and (min-width: 769px)  {
   #phonenum {
-  height: 10%;
-  width: 10%;
-  margin-left: 45%;
-
+  height: auto;
+  width: auto;
+  max-width: fit-content;
+  margin: 5%;
+  margin-left: 27%;
   }
 }
 
