@@ -602,12 +602,12 @@ footer {
   }
 }
 
-@media screen and (min-width: 769px)  {
+@media screen and (min-width: 770px)  {
   #phonenum {
   height: auto;
   width: auto;
   max-width: fit-content;
-  margin: 5%;
+  margin: 4%;
   margin-left: 27%;
   }
 }
