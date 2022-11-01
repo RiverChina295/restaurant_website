@@ -1,0 +1,62 @@
+.resto_app_map {
+  padding: 5rem 0;
+}
+
+.app_menu_title {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.price_app {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.lines {
+  flex-grow: 1;
+  height: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-image: url(https://technext.github.io/pato/images/icons/pattern3.png);
+  background-repeat: repeat;
+  margin-bottom: 0.7rem;
+}
+
+.ingredients_app {
+  font-weight: 400;
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.7;
+}
+
+.app_menu_item {
+  transition: all 0.6s;
+  margin-bottom: 2rem;
+}
+
+.menu_item_title {
+  color: #222222;
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  z-index: 10;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+
+.icone_app {
+  width: 30px;
+  margin-right: 0.5rem;
+}
+
+.app_menu_item:hover h3 {
+  transition: all 0.6s;
+  /*color: #f44336;*/
+}
+
