@@ -1,4 +1,16 @@
 # Website for China River, Beverly MA
+October 31, 2022
+- Massive overhaul to existing design
+- Streamlined with simpler colors to make it easier on the eyes 
+- Centralized design to allow each section can be presented on a page more easily removing clutter
+- Updated photos with a more artistic look
+*To be added*
+- NYE menu
+- Comment feeder
+- Proper menu gallery
+- navigation bar
+- dark mode
+
 
 August 1st, 2022
 - Slotted in a few more comments to remind myself
