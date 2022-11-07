@@ -1,0 +1,617 @@
+/* 
+Please use the find feature to find the section of the CSS you want by referencing the content section here!
+  /* ----------------------------------------------------------------------- 
+  Contents 
+   1. Main
+   2. Screen Adjustments
+   3. Text / Text Boxes
+   4. Pictures
+   5. Map
+   6. Navigation Bar
+   6b. Mobile Navigation Bar
+   7. Comments
+   8. Etc (Buttons)
+   ----------------------------------------------------------------------- */
+
+
+/* 1. Main */
+
+
+html > body {
+  /* multiple color stages in the gradient to create a smooth color flow */
+  background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
+    #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
+    #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
+}
+
+
+.container {
+  padding-top: 100px;
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+/* 2. Screen Adjustments */
+
+
+/* resizing for different screens, keeps the dimensions still intact */
+@media only screen and (min-width: 10px) and (max-width: 1220px) {
+  .d-block {
+    display: block;
+    overflow: visible;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: auto;
+    min-height: auto;
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (min-width: 769xp) {
+  .navbar-nav {
+    display: none;
+    overflow: hidden;
+}
+}
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* 3. Text / Text Boxes */
+
+.newyears {
+  margin-top: 80px;
+}
+
+.hoursOperation {
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: left;
+  
+}
+
+#subText {
+  text-align: center;
+}
+
+.desc {
+  text-align: left;
+}
+
+.bold {
+  font-weight:bold;
+  text-align: left;
+}
+
+.hours {
+  border: 20px;
+}
+
+
+.menuHeader {
+font-family: 'Hammersmith One', 'sans-serif';
+color: #ffffff;
+text-shadow: 4px 4px 4px #000000;
+padding-top: 5px;
+text-align: center;
+}
+
+.subMenuHeader {
+  font-family: 'Hammersmith One', 'sans-serif';
+  color: #000000;
+  text-shadow: 4px 4px 4px #a7a4a4;
+  padding-top: 5px;
+
+}
+
+.h2 {
+  margin-bottom: -20px;
+  color: #ffffff;
+}
+
+p {
+  color: #a7a4a4;
+}
+
+/* horizontal lines, but invisible for spacing on certain niches of website */
+
+hr {
+  visibility: hidden;
+  clear: both;
+}
+
+li {
+  display: block;
+  color: black;
+  align-items: center;  
+}
+
+.notice {
+  border: 1px solid transparent;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.table td, .table th,
+.menuItem {
+  font-family: bangers;
+    	color: #000000;
+  	font-weight: 500;
+    border: none;
+    
+
+}
+
+.table tr, .tbody {
+  border: none;
+
+}
+
+.table #redText {
+  border: none;
+}
+
+.table #hideMe {
+  border-top: 1px solid #fff;
+}
+
+/* Operation time-block */
+.menu-timeframe {
+  padding-top: 25px;
+}
+
+.menuItem,
+.hoursOperation,
+#storePic {
+  border: 1px dashed #ff590D;
+	box-shadow: 0 0 0 3px #ff590D, 0 0 0 5px #FFCF0D, 0 0 0 10px #E8710C, 0 0 2px 10px #FFCF0D;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 20px 20px 20px 20px;
+}
+
+
+#footer {
+  color: black;
+}
+/* ----------------------------------------------------------------------- */
+
+/* 4. Pictures */
+
+.newyearsbanner {
+  width: 100%;
+  height: auto;
+}
+
+.mainPicture {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  border: 1px solid red;
+  margin-top: 10rem;
+}
+
+#logo {
+  border-radius: 25px;
+  border: 3px solid red;
+  margin-top: 5px;
+  float: left;
+}
+
+#storePic {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+
+.top-picture{
+  padding-top: 10px;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carousel {
+  display: block;
+  margin: 0 auto;
+  width:500px;
+  height:360px;
+  max-width: 80%;
+  overflow-x: hidden;
+}
+
+/* carousel elements */
+.d-block, w-100,
+carousel-item{
+  overflow: hidden;
+  display: block;
+  width: 10px;
+  height: 300px;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 6%;
+  border: 5px solid #ff5900; 
+}
+
+.carousel {
+  height: 100%;
+  max-width: 100%;
+  border-radius: 10%;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+}
+
+/* The text on the carousel pictures and other pictures */
+.carousel-desc {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: -50px;
+  color: #fff;
+  font-family: 'Bangers', 'sans-serif';
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #000000;
+}
+
+#menuShowcase {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Bangers', 'sans-serif';
+  font-size: 30px;
+  text-shadow: 3px 5px 7px #000000;
+}
+
+.menuPic {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  border-radius: 20%;
+  border: 1px dashed #E8710C;
+}
+
+.galleryPic {
+  display: block;
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+  border-radius: 10%;
+  border: 1px dashed #E8710C;
+}
+
+#pdf-menu {
+  display: flex;  
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  max-height: 600px;
+  
+
+}
+
+#rotatedPic {
+  image-orientation: from-image;
+}
+
+
+
+
+/* ----------------------------------------------------------------------- */
+
+/* 5. Map */
+
+
+#map {
+   display: block;
+   margin: 0 auto;
+   border-top: 1px solid #000000;
+   background: #d9f72d;
+   background: -webkit-linear-gradient(top, #f52d00, #d9f72d);
+   background: -moz-linear-gradient(top, #f52d00, #d9f72d);
+   background: -ms-linear-gradient(top, #f52d00, #d9f72d);
+   background: -o-linear-gradient(top, #f52d00, #d9f72d);
+   padding: 19px 38px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 200%;
+   font-family: "Bangers", serif;
+   text-decoration: none;
+   }
+
+#map > a {
+  color: #ffffff;
+  padding: 40px;
+}
+
+#map:hover {
+   border-top-color: #de2b03;
+   background: #de2b03;
+   color: #ccc;
+   }
+#map:active {
+   border-top-color: #fc2600;
+   background: #fc2600;
+   }
+
+
+
+/* ----------------------------------------------------------------------- */
+
+/* 6. Navigation Bar */
+
+.navbar-toggler-icon {
+  display: unset;
+  font-family: 'Hammersmith One', sans-serif;
+  text-shadow: 3px 3px 8px #fff;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 769px) {
+.navbar-expand-md .navbar-collapse {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+}
+
+/* @media screen and (max-width: 1024px) {
+  .navbar-nav {
+    visibility: hidden !important;
+  }
+} */
+
+
+.sideNav header {
+  color: ffffff;
+  margin: 10px 10px 10px 10px;
+  background: #ff5900;
+  
+}
+
+.sideNav  ul a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  transition: .4s;
+  border-radius: 30px;
+  left: -100px;
+  font-family: 'Hammersmith One';
+}
+
+
+#check {
+  font-family: 'Hammersmith One';
+}
+
+ul li:hover a {
+  padding-left: 10px;
+  color: #fd7474;
+}
+
+a {
+  display: block ruby;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  z-index: 1111;
+  position: fixed;
+  cursor: pointer;
+  background: #d63f03;
+  border-radius: 0px;
+  padding: 6px 6px;
+}
+
+label #btn
+{
+  z-index: 1111;
+  left: 40px;
+  top: 25px;
+  font-size: 40px;
+  color: #ffffff;
+  padding: 6px 6px;
+  transition: all ease .5s;
+  visibility: hidden;
+}
+
+label #cancel {
+  left: 210px;
+  top: 17px;
+  font-size: 20px;
+  color: #d7e5e9;
+  padding: 4px 5px;  
+}
+
+#check:checked ~ .sideNav {
+  left: -250px;
+  transition: all ease .5s;
+}
+
+#check:checked ~ label #btn {
+  left: -250px;
+  pointer-events: none;
+  transition: all ease .5s
+}
+
+#check:checked ~ label #cancel {
+  left: 0;
+}
+
+#mobileNavBar {
+  opacity: 95%;
+  background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
+  #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
+  #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
+}
+
+/* ----------------------------------------------------------------------- */
+
+
+
+/* 6b. navbar for mobile */
+
+ .nav-link {
+  color: #f8f8f8;
+  font-family: 'Hammersmith One', 'sans-serif';
+  font-size: 20px;
+  text-shadow: 1px 3px 10px rgb(3, 3, 3);
+  border-bottom: 10px;
+} 
+/*
+.navbar-toggler-icon {
+  position: relative;
+  left: -29px;
+  font-size: 20px;
+}
+
+#check:checked ~ section {
+  margin-left: 195px;
+}
+*/
+
+/* .navbar-nav {
+  display: flexbox;
+  font-family: 'Hammersmith One', 'sans-serif';
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to top right, #ff6f48 5%, #f08658 12.5%, #f87b51 15%, #fb754c 18.7%,
+  #f48154 25%,#ff6f48 30%,  #f08658 35%, #f87b51 40%, #fb754c 45%, #f48154 50%,#ff6f48 55%,  #f08658 60%, 
+  #f87b51 65%, #fb754c 70%, #f48154 75%,#ff6f48 80%,  #f08658 85%, #f87b51 90%, #fb754c 95%, #f48154 99.5%) !important;
+}  */
+
+
+/* ----------------------------------------------------------------------- */
+
+/* 7. Comments */
+footer {
+
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* 8. Misc/Etc */
+
+#redText {
+  color: #f3593efa;
+  border: 1px solid white;
+  text-shadow: -1px 1px 2px -1px #000000;
+  font-weight: 400;
+}
+
+#redSubHeader {
+    color: #f3593efa;
+    border: 1px solid white;
+    text-shadow: -1px 1px 2px -1px #000000;
+    font-weight: 400;
+}
+
+#greenText {
+  color: #55a819;
+  border: 1px solid white;
+  text-shadow: -1px 1px 2px -1px #000000;
+  font-weight: 500;
+}
+
+#simpleMenu {
+    float: right;
+    padding:0.35em 1.2em;
+    border:0.1em solid #ffffff;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Hammersmith One',sans-serif;
+    font-weight:300;
+    color:#fffb00;
+    text-align:center;
+    transition: all 0.2s;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 10px 10px 10px;
+  }
+
+#simpleMenu:hover{
+    color:#000000;
+    background-color:#ffffff;
+    }
+
+@media all and (max-width:30em){
+#simpleMenu {
+  display:block;
+  margin:0.4em auto;
+  }
+} 
+
+#phonenum {
+  position: relative;
+  display:block;
+  margin-right: auto;
+  margin-bottom: 10%;
+  border-radius: 10%;
+}
+
+
+
+@media screen and (max-width: 769px)  {
+  #phonenum {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  }
+}
+
+@media screen and (min-width: 770px)  {
+  #phonenum {
+  height: auto;
+  width: auto;
+  max-width: fit-content;
+  margin: 4%;
+  margin-left: 27%;
+  }
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* End */
