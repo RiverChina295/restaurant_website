@@ -6,6 +6,12 @@
 5. Misc (or to use in other projects as well)
 */
 
+/* Universal */
+
+body {
+  background: rgb(255,214,214);
+  background: linear-gradient(329deg, rgba(255,214,214,1) 0%, rgba(254,255,225,1) 100%); 
+}
 /* 1. Main Menu */
 
 .resto_app_map {
@@ -17,7 +23,9 @@
     max-width: 100%;
     max-height: 100%;
     display: block;
-    border: 10px solid white;
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(329deg, rgba(255,0,0,1) 0%, rgba(246,255,0,1) 100%) 1;
     margin-top: 2vh;
   }
 
@@ -26,6 +34,8 @@
     font-family: 'Trirong', arial; 
     border-style: none;
     font-size: 45px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 
   }
   
