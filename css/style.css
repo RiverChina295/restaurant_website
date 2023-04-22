@@ -1,15 +1,28 @@
 /* 
-1. Restaurant Menu Templating
+1. Main Menu
 2. Icons
 3. Call Button 
 4. Footer Template
 5. Misc (or to use in other projects as well)
 */
 
-/* 1. Restaurant Menu Templating */
+/* 1. Main Menu */
 
 .resto_app_map {
     padding: 5rem 0;
+  }
+
+  #storeTitle {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #itemHeader {
+    text-align: center;
+    font-family: 'Trirong', arial; 
+    border-style: none;
+    font-size: 45px;
+
   }
   
   .app_menu_title {

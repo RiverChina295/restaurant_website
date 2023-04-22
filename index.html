@@ -7,19 +7,20 @@
     <title>China River Beverly, MA</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 </head>
 
 
 
 <body style="border-style: none;background: rgb(191,191,191);">
     <header></header>
-    <div id="storetitle"></div>
-    <div></div>
+    <div>
+        <img id="storeTitle" src='assets/img/newcover.jpg'>
+    </div>
     <div class="col-11 offset-1" style="border-width: 20px;">
         <section id="main-banner" class="py-4 py-xl-5">
             <div class="container py-4 py-xl-5">
                 <div class="row gy-4 gy-md-0">
-                    <img src="assets/img/newcover.jpg">
                     <h1 style="text-align:center; font-weight: 800; margin-top: 1rem;">China River Restaurant <br> 295 Rantoul St <br> Beverly, MA 01915</h1>
                     <h1 class="my-3" style="text-align: center;font-family: Poppins, sans-serif;">Fast delicious Chinese takeout</p>
                     <p class="my-3" style="text-align: center;font-family: Poppins, sans-serif;">Delivery throughout Beverly</p>
@@ -78,24 +79,6 @@
 		<a target="_blank" href="2023pdfmenu.pdf">
 			<img class="img-fluid" src="assets/img/pdftakeout.png" width="562" height="422">
 		</a>
-        <div class="container py-4 py-xl-5">
-            <div class="row">
-                <div class="col-md-8 col-xl-6 mx-auto p-4">
-                    <hr class="my-5">
-                    <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
-                        <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center me-4 d-inline-block bs-icon xl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-lightbulb">
-                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"></path>
-                            </svg></div>
-                        <div>
-                            <h4>Prefer the old Look?</h4>
-                            <p>The previous web page will be kept up for a bit as we finalize design on this page. Click the link below.</p><a href="oldindex.html">Previous Website Design<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                </svg></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <div id="directions">
         <h1 style="text-align: center;font-size: 62px;font-family: Poppins, sans-serif;background: rgb(171,10,0);color: rgb(249,209,0);">Our Location</h1>
@@ -149,7 +132,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6"><img class="rounded-circle img-fluid" src="assets/img/16(SE)CR.jpg">
-                    <h3 style="text-align: center;font-family: Poppins, sans-serif;font-size: 24.3px;">c16-Sesame Chicken with Crab Rangoons (app substitution)</h3>
+                    <h3 style="text-align: center;font-family: Poppins, sans-serif;font-size: 24.3px;">c16 Sesame Chicken / Crab Rangoons</h3>
                 </div>
                 <div class="col-md-6"><img class="rounded-circle img-fluid" src="assets/img/SPR.jpg">
                     <h3 style="text-align: center;font-family: Poppins, sans-serif;">Spring Rolls</h3>
@@ -167,7 +150,8 @@
         </div>
     </div>
     <div id="appetizers">
-        <h1 style="text-align: center;font-size: 64px;font-family: Poppins, sans-serif;background: rgb(249,209,0);color: rgb(171,10,0);">Appetizers</h1>
+        <hr>
+        <h1 style="text-align: center;font-size: 64px;font-family: Trirong, sans-serif;">Appetizers</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 offset-xl-0">
@@ -178,11 +162,12 @@
                 <div class="col-md-6 col-lg-6 col-xl-5 col-xxl-6 offset-xl-1 offset-xxl-0">
                     <div class="app_menu_item">
                         <div class="text-center d-flex" style="height: 85.5px;">
-                            <h1 style="text-align: center;font-size: 40px;height: 73.5px;font-family: Poppins, sans-serif;line-height: 52px;margin: -15px;">Pu Pu Platter</h1>
+                            <h1 id="itemHeader">Pu Pu Platter</h1>
+                            
                             <p class="price_app my-auto" style="font-size: 20px;font-family: Poppins, sans-serif;">(1) $13.75</p>
                             <p class="price_app my-auto" style="font-size: 20px;font-family: Poppins, sans-serif;">&nbsp; &nbsp;(2) $24.95</p>
                         </div>
-                        <p style="font-size: 15px;font-family: Poppins, sans-serif;" class="price_app my-auto">EGG ROLLS, CHICKEN WINGS, CRAB RANGOONS, CHICKEN FINGERS, FRIED SHRIMP, BEEF TERIYAKI, BARBECUED SPARERIBS (<em>OR BONELESS SPARERIBS BY REQUEST AT NO CHARGE)</em></p>
+                        <p style="font-size: 15px;font-family: Poppins, sans-serif; padding-top: 40px;" class="price_app my-auto">EGG ROLLS, CHICKEN WINGS, CRAB RANGOONS, CHICKEN FINGERS, FRIED SHRIMP, BEEF TERIYAKI, BARBECUED SPARERIBS (<em>OR BONELESS SPARERIBS BY REQUEST AT NO CHARGE)</em></p>
                     </div>
                     <div class="app_menu_item" style="font-family: Poppins, sans-serif;">
                         <div class="d-flex" style="font-family: Poppins, sans-serif;">
@@ -291,13 +276,16 @@
                         <div class="lines mt-auto" style="font-family: Poppins, sans-serif;"></div>
                         <p class="price_app my-auto" style="font-size: 20px;font-family: Poppins, sans-serif;">$7.25</p>
                     </div>
-                    <hr><img class="img-thumbnail img-fluid" src="assets/img/S+SCH.jpg">
+                    <hr>
+                    <img class="img-thumbnail img-fluid" src="assets/img/S+SCH.jpg">
                     <h4 class="text-center" style="text-align: center;font-family: Poppins, sans-serif;">Sweet and Sour Chicken</h4>
                     <div class="app_menu_item"></div>
                     <div class="app_menu_item"></div>
                 </div>
                 <div class="col-md-6 col-xl-5 col-xxl-6" id="chinariverplatters">
-                    <h1 style="text-align: center;font-family: Poppins, sans-serif;border-style: none;font-size: 45px;" id="plattertitle">China River Platters</h1>
+                    <hr>
+                    <h1 id="itemHeader">China River Platters</h1>
+                    <hr>
                     <p style="text-align: center;font-family: Poppins, sans-serif;">Appetizer substitutions cost $1 each</p>
                     <div id="platterA" class="app_menu_item" style="font-family: Poppins, sans-serif;">
                         <div class="d-flex" style="font-family: Poppins, sans-serif;">
