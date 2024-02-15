@@ -1,4 +1,9 @@
 # Website for China River, Beverly MA
+
+February 14th, 2024
+- This website is no longer maintained by the original owner. Please update bookmarks. Will archive this project for personal projects moving forward.
+- Thank you for following all these years, I've learend a lot
+- 
 October 31, 2022
 - Massive overhaul to existing design
 - Streamlined with simpler colors to make it easier on the eyes 
